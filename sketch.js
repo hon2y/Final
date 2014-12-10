@@ -30,10 +30,10 @@ function draw() {
     var timing = (new Date()%duration)/duration;
 
 
-    if(timing*){
-    image(cl1, timing*1000,226);
-    } else if(timing*){
-    image(cl2, timing*1000,211);
+    if(timing*2 <1){
+    image(cl1, timing*1000,42);
+    } else if(timing*2 <2){
+    image(cl2, timing*1000,37);
     }
 
 
