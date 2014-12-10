@@ -28,7 +28,7 @@ function draw() {
    var duration = 3000;
    var timing = (new Date()%duration)/duration;
 
-   image(cl1, 213+ Math.sin(timing*2*PI), 41, 58); 
+   image(cl1, 53 + Math.sin(timing*2*PI), 41, 58, 213, 74); 
 
                                     // height
    image(cl2, 653, 37, 119, 50);
