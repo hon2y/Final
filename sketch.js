@@ -28,7 +28,7 @@ function draw() {
    var duration = 3000;
    var timing = (new Date()%duration)/duration;
 
-   image(cl1, 53 + Math.sin(timing*2*PI), 41, 58, 213, 74); 
+   image(cl1, 53 + Math.sin(timing*2*PI), 41, 74, 213, 74); 
 
                                     // height
    image(cl2, 653, 37, 119, 50);
@@ -61,15 +61,5 @@ function draw() {
         10,                                     // width
         10);                                    // height
 
-    //balloon
-    if(f){
-    if(c < -17){
-        c=0;
-        f=false;
-    }else{
-        image(br1,800,500+c*5);
-        c= c-1;
-        }
-    }
 
 }
