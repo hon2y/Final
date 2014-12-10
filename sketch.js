@@ -26,15 +26,11 @@ function draw() {
    background(img1);
    
 
-    var duration = 3000;
-    var timing = (new Date()%duration)/duration;
-
-
-    if(timing*2 <1){
-    image(cl1, timing*1000,42);
-    } else if(timing*2 <2){
-    image(cl2, timing*1000,37);
-    }
+  image(cl1, 0+goCount, 134);
+   goCount = goCount +3;
+   if(goCount > 1000){
+     goCount = 0;
+   }
 
 
    // image(img2, 700-img2.width/2, 700-img2.height/2, 300, 300);
