@@ -25,7 +25,6 @@ function setup() {
 function draw() {
    background(img1);
    
-   var timing1 = (new Date()%duration1)/duration1;
 
    image(cl1,10+sin(t1*1)*1000,10,1100,600);
 
