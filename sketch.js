@@ -26,12 +26,13 @@ function draw() {
    background(img1);
    
 
+   image(cl1, 41, 58, 213, 74);
    image(a, 242, 46, 180, 533);
    image(b, 431, 71, 150, 508);
    image(c, 587, 303, 238, 276);
    image(d1, 201, 389, 37, 209);
    image(d1, 825, 389, 37, 209);
-   image(cl1, 41, 58, 213, 74);
+   
    image(cl2, 653, 37, 119, 50);
    image(cl3, 840, 85, 88, 38);
    image(br1, 790, 241, 66, 135);
