@@ -61,4 +61,15 @@ function draw() {
         10,                                     // width
         10);                                    // height
 
+    //balloon
+    if(f){
+    if(c < -17){
+        c=0;
+        f=false;
+    }else{
+        image(img5,800,500+c*5);
+        c= c-1;
+        }
+    }
+
 }
