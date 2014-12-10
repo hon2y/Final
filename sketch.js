@@ -25,13 +25,9 @@ function setup() {
 function draw() {
    background(img1);
    
+   var timing1 = (new Date()%duration1)/duration1;
 
-  image(cl1, 0+goCount, 42);
-   goCount = goCount +3;
-   if(goCount > 1000){
-     goCount = 0;
-   }
-
+   image(cl1,10+sin(t1*1)*1000,10,1100,600);
 
    // image(img2, 700-img2.width/2, 700-img2.height/2, 300, 300);
     // ellipse(500,500,250,250);
