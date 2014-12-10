@@ -67,7 +67,7 @@ function draw() {
         c=0;
         f=false;
     }else{
-        image(img5,800,500+c*5);
+        image(br1,800,500+c*5);
         c= c-1;
         }
     }
