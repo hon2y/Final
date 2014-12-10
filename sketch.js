@@ -52,7 +52,7 @@ function draw() {
    var timing = (new Date()%duration)/duration;
 
    fill(146,125,125);
-   ellipse(timing * 640,
+   ellipse(timing * 1000,
        240 + Math.sin(timing*2*PI)*240,      // y좌표
         10,                                     // width
         10);                                    // height
