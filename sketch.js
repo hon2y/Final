@@ -26,6 +26,9 @@ function draw() {
    background(img1);
    
 
+   image(a, 242, 46, 180, 533);
+   image(b, 431, 71, 150, 508);
+   image(c, 587, 303, 238, 276);
    image(cl1,10+sin(t1*1)*1000,10,1100,600);
 
    // image(img2, 700-img2.width/2, 700-img2.height/2, 300, 300);
