@@ -26,7 +26,7 @@ function draw() {
    background(img1);
    
 
-  image(cl1, 0+goCount, 134);
+  image(cl1, 0+goCount, 42);
    goCount = goCount +3;
    if(goCount > 1000){
      goCount = 0;
