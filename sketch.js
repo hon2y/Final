@@ -25,8 +25,14 @@ function setup() {
 function draw() {
    background(img1);
    
+   var duration = 3000;
+   var timing = (new Date()%duration)/duration;
 
    image(cl1, 41, 58, 213, 74);
+   ellipse(timing * 2000,
+       58+ Math.sin(timing*2*PI),    // y좌표
+       213,                                   // width
+        74);                                  // height
    image(cl2, 653, 37, 119, 50);
    image(cl3, 840, 85, 88, 38);
    image(br1, 790, 241, 66, 135);
@@ -53,7 +59,7 @@ function draw() {
 
    fill(146,125,125);
    ellipse(timing * 1000,
-       240 + Math.sin(timing*2*PI)*240,      // y좌표
+       240 + Math.sin(timing*2*PI),    // y좌표
         10,                                     // width
         10);                                    // height
 
