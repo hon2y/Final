@@ -3,14 +3,41 @@ var img1;
 function setup() {
     createCanvas(1000, 700);
     img1 = loadImage("bg.png");
-    img2 = loadImage("1.png");
+    a = loadImage("a.png");
+    b = loadImage("b.png");
+    c = loadImage("c.png");
+    d1 = loadImage("d1.png");
+    cl1 = loadImage("cl1.png");
+    cl2 = loadImage("cl2.png");
+    cl3 = loadImage("cl3.png");
+    br1 = loadImage("br1.png");
+    br2 = loadImage("br2.png");
+    bus = loadImage("bus.png");
+    car1 = loadImage("car1.png");
+    car2 = loadImage("car2.png");
+    tr1 = loadImage("tr1.png");
+    tr2 = loadImage("tr2.png");
+    tr3 = loadImage("tr3.png");
+    mtr = loadImage("mtr.png");
 }
 
 
 function draw() {
    background(img1);
    
-   image(img2, 700-img2.width/2, 700-img2.height/2, 300, 300);
+
+    var duration = 3000;
+    var timing = (new Date()%duration)/duration;
+
+
+    if(timing*2 <1){
+    image(cl1, timing*1047,226);
+    } else if(timing*2 <2){
+    image(cl2, timing*1047,211);
+    }
+
+
+   // image(img2, 700-img2.width/2, 700-img2.height/2, 300, 300);
     // ellipse(500,500,250,250);
 
 //수
