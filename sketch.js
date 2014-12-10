@@ -27,23 +27,23 @@ function draw() {
    
 
    image(cl1, 41, 58, 213, 74);
+   image(cl2, 653, 37, 119, 50);
+   image(cl3, 840, 85, 88, 38);
+   image(br1, 790, 241, 66, 135);
+   image(br2, 133, 178, 54, 110);
+   image(tr1, 858, 209, 138, 375);
+   image(tr2, 79, 248, 124, 336);
+   image(tr3, 32, 325, 96, 260);
    image(a, 242, 46, 180, 533);
    image(b, 431, 71, 150, 508);
    image(c, 587, 303, 238, 276);
    image(d1, 201, 389, 37, 209);
    image(d1, 825, 389, 37, 209);
-   
-   image(cl2, 653, 37, 119, 50);
-   image(cl3, 840, 85, 88, 38);
-   image(br1, 790, 241, 66, 135);
-   image(br2, 133, 178, 54, 110);
+   image(mtr, 389, 553, 43, 47);
    image(bus, 88, 553, 270, 127);
    image(car1, 421, 590, 239, 89);
    image(car2, 0, 590, 239, 89);
-   image(tr1, 858, 209, 138, 375);
-   image(tr2, 79, 248, 124, 336);
-   image(tr3, 32, 325, 96, 260);
-   image(mtr, 389, 553, 43, 47);
+
    // image(img2, 700-img2.width/2, 700-img2.height/2, 300, 300);
     // ellipse(500,500,250,250);
 
@@ -52,8 +52,8 @@ function draw() {
    var timing = (new Date()%duration)/duration;
 
    fill(146,125,125);
-   ellipse(600 + Math.cos(timing*2*PI)*150,           // x좌표
-        600 + Math.sin(timing*2*PI)*150,       // y좌표
+   ellipse(timing * 640,
+       240 + Math.sin(timing*2*PI)*240,      // y좌표
         10,                                     // width
         10);                                    // height
 
