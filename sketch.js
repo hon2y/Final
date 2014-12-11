@@ -55,9 +55,9 @@ function draw() {
 
    fill(146,125,125);
    ellipse(timing * 1000,
-       240 + Math.sin(timing*2*PI),    // y좌표
-        10,                                     // width
-        10);                                    // height
+       100 + Math.sin(timing*2*PI)*50,    // y좌표
+        5,                                     // width
+        5);                                    // height
 
 
 }
